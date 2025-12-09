@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body{margin:0;font-family:Arial, Helvetica, sans-serif;background:#f4f4f4;color:#222;}
+    .wrap{padding:20px;display:flex;justify-content:center;}
+    .card{max-width:850px;width:100%;background:#fff;border-radius:10px;display:flex;gap:20px;padding:20px;border:1px solid #ddd;}
+
+    .main{flex:2;}
+    .name{font-size:26px;font-weight:bold;margin:5px 0;}
+    .role{color:#555;font-size:14px;margin-bottom:10px;}
+
+    .section{margin-top:18px;}
+    .section h3{font-size:16px;margin-bottom:6px;}
+    .info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
+    .info-card{background:#fafafa;border:1px solid #e5e5e5;padding:10px;border-radius:6px;font-size:14px;}
+
+    .skills{display:flex;flex-wrap:wrap;gap:6px;}
+    .skill{background:#eee;padding:6px 10px;border-radius:5px;font-size:13px;}
+
+    .side{flex:1;text-align:center;}
+    .avatar{width:110px;height:110px;border-radius:50%;background:#ddd;display:flex;align-items:center;justify-content:center;font-weight:bold;margin:auto;}
+
+    .personal{margin-top:15px;font-size:14px;}
+    .pd-row{display:flex;justify-content:space-between;border-bottom:1px solid #eee;padding:6px 0;}
+
+    @media(max-width:700px){
+      .card{flex-direction:column;}
+      .pd-row{flex-direction:column;align-items:flex-start;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article class="card" aria-label="Portfolio card">
+      <section class="main">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;">
+          <div>
+            <div class="role">Software Engineer / Full Stack Developer</div>
+            <div class="name">Your Name</div>
+            <div class="quote">"Education is the most powerful weapon you can use to change the world."</div>
+          </div>
+          <div style="text-align:right;color:var(--muted);font-size:12px">
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Academic Details</h3>
+          <div class="info-grid">
+            <div class="info-card"><strong>Degree</strong><div>B.E. Computer Science</div></div>
+            <div class="info-card"><strong>College</strong><div>Your College Name</div></div>
+            <div class="info-card"><strong>Year</strong><div>3rd Year (VTU 2022)</div></div>
+            <div class="info-card"><strong>CGPA</strong><div>8.1 (example)</div></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Skills</h3>
+          <div class="skills">
+            <span class="skill">C</span>
+            <span class="skill">Python</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">React</span>
+            <span class="skill">SQL</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>About</h3>
+          <p style="color:var(--muted);line-height:1.5;margin:0">I am a passionate developer who loves building web apps and solving problems. Currently focused on full-stack development, cloud fundamentals and improving data structures & algorithms skills.</p>
+        </div>
+      </section>
+
+      <aside class="side">
+        <!-- Placeholder avatar - replace src with your image path -->
+        <div class="avatar">
+  <img src="./assets/me.jpg" alt="Profile Photo" style="width:100%; height:100%; border-radius:50%; object-fit:cover;">
+</div>
+
+        <div class="personal">
+          <div class="pd-row"><span>Name</span><strong>Your Name</strong></div>
+          <div class="pd-row"><span>DOB</span><strong>01/01/2000</strong></div>
+          <div class="pd-row"><span>Mobile</span><strong>+91 9xxxxxxxxx</strong></div>
+          <div class="pd-row"><span>Blood Group</span><strong>B+</strong></div>
+          <div class="pd-row"><span>Location</span><strong>Your City, India</strong></div>
+        </div>
+
+        <div class="download">
+          <a class="btn" href="#">Download CV</a>
+        </div>
+      </aside>
+    </article>
+  </div>
+</body>
+</html>
