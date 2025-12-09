@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+    </nav>
+
+    <article class="card">
+      <section class="main">
+        <h1>Projects</h1>
+
+        <div class="section">
+          <h3>Library Management System</h3>
+          <p class="lead">A full-stack Library Management System to manage books, members, issue/return flow and fines. Features include:
+          <ul>
+            <li>Admin panel to add / remove books and manage inventory</li>
+            <li>Member registration and authentication</li>
+            <li>Issue / return workflow with due-date tracking</li>
+            <li>Search and filter books by author, genre, availability</li>
+          </ul>
+          Add repo link and live demo link as needed.</p>
+        </div>
+
+        <div class="section">
+          <h3>Feedback Analysis — "Fallback Analyser"</h3>
+          <p class="lead">A feedback-analysis project that aggregates user feedback and runs a multi-step analysis pipeline ("Fallback Analyser") to extract sentiment, key topics and fallback recommendations when confidence is low. Main points:
+          <ul>
+            <li>Preprocessing: cleaning, tokenization and basic normalization</li>
+            <li>Primary model: sentiment & topic extraction (e.g., simple classifier + keyword matching)</li>
+            <li>Fallback analyser: when primary model confidence is low, run an alternative lightweight heuristic pipeline to still provide useful insights</li>
+            <li>Output: dashboard with sentiment breakdown, top keywords, and suggested actions</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <aside class="side">
+        <div class="avatar"><img src="./assets/me.jpg" alt="Profile Photo"></div>
+        <div style="margin-top:10px;font-weight:700">Your Name</div>
+        <div style="margin-top:12px"><a class="btn" href="https://github.com/vinay-cs245" target="_blank" rel="noopener">My GitHub</a></div>
+      </aside>
+    </article>
+
+    <footer>Projects — screenshots and repo links help. Put images in <code>/assets</code> and link them from these project sections.</footer>
+  </div>
+</body>
+</html>
